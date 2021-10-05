@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5a0717a01f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="imagens/logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="bolos.html">Bolos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pedidos.html">Faça seu Pedido</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="cadastro.html"><b>Cadastrar</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Entrar</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container d-flex justify-content-end">
+        <div id="cadastrOk" class="alert alert-success alert-dismissible fade show col-5" role="alert">
+            <strong>Parabéns!</strong> O seu cadastro foi enviado com sucesso !!
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <section class="d-flex justify-content-center">
+        <form id="cadastroUsers">
+            <div class="container">
+                <h1 class="mb-5"><i class="fas fa-users"></i> Cadastro de Usuários</h1>
+                <div class="row mb-3">
+                    <div class="col-md">
+                        <label for="nome" class="form-label">Nome de usuário</label>
+                        <input type="text" class="form-control" id="userNome" name="userNome" required pattern="/\s/g">
+                    </div>
+
+                    <div class="col-md">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="userSenha" name="userSenha" required
+                            pattern="^\S+$" minlength="4">
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+                    <div class="col-md">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="userEmail" name="userEmail" required>
+                    </div>
+                    <div class="col-md">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="text" class="form-control" id="userCel" name="userCel"
+                            placeholder="(00) 00000-0000" required>
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-3">
+                        <label for="cep" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="userCep" name="userCep"
+                            onblur="buscarCep(this.value)" required maxlength="9">
+                    </div>
+
+                    <div class="col-md">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="userendereco" name="userEndereco" disabled>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label for="numero" class="form-label">Número</label>
+                        <input type="text" class="form-control" id="userNumero" name="userNumero" required>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md">
+                        <label for="bairro" class="form-label">Bairro</label>
+                        <input type="text" class="form-control" id="userBairro" name="userBairro" disabled>
+                    </div>
+
+                    <div class="col-md">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="userCidade" name="userCidade" disabled>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label for="estado" class="form-label">Estado</label>
+                        <input type="text" class="form-control" id="userEstado" name="userEstado" disabled>
+                    </div>
+                </div>
+                <button onclick="validar()" type="submit" class="btn btn-primary corBotao mb-3"> <img
+                        src="imagens/icons/iconOK.svg" alt="">
+                    Cadastrar</button>
+            </div>
+        </form>
+    </section>
+
+    <div id="resp" class="container-fluid text-center">
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>

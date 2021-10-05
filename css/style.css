@@ -1,0 +1,241 @@
+@font-face {
+	font-family: Lobster;
+	src: url('../font/Lobster.otf')
+}
+
+h1,h2,h3 {
+    color: #7d7d7d;
+    font-family: Lobster;
+    font-size: 51px;
+    font-weight: normal;
+    text-shadow: 3px 3px 0 rgb(223 223 223 / 90%);
+}
+
+.bg-nav {
+    background-color: #FAFAFA;
+}
+
+.nav-item a {
+    font-family: Lobster, sans-serif;
+    color: #7d7d7d;
+    font-size: 20px;
+    border-top: 1px dashed #d6d5d5;
+    border-bottom: 1px dashed #d6d5d5;
+    text-shadow: 2px 2px 0 rgb(223 223 223 / 90%);
+    margin-right: 20px;
+}
+
+.nav-item:last-child a {
+    margin-right: 0;
+}
+
+ .nav-item a:hover {
+    color: #f88c91 !important;
+}
+
+body {
+     background-color: #FAFAFA; 
+     content: "";
+    /* background: url('http://designarc.biz/demos/cake/theme/cake-html/img/w-left-techture.png'); */
+     background-position: center;
+    
+}
+
+
+/*Estilo dos cards*/
+.card-cake {
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.card-top-cake {
+    background-image: url("../imagens/cake-red.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    background-position: right;
+    color: #f88c91;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.card-body {
+    background:#f88c91;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
+
+            
+ @keyframes animatedBackground {
+    from {background-position: 0 0;}
+    to {background-position: 55px 0;}
+    }
+
+
+  @-webkit-keyframes animatedBackground {
+    from {background-position: 0 0;}
+    to {background-position: 100% 0;}
+    } 
+       
+
+.card-body:hover {
+    background-image:url(../imagens/animationBgCard.png);
+    background-repeat: repeat;
+    background-position: 0px 0px;
+    animation: animatedBackground 4s linear infinite;
+}
+
+
+/*https://demo.codeopus.tech/cakesdream/assets/images/dot-pink.png*/
+
+
+span {
+    font-size: 18px;
+}
+
+.card-cake-button {
+    opacity: 0;
+    display: none;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.card-body:hover .card-cake-button {
+    opacity: 1;
+    display: block;
+    height: 81px;
+}
+
+.card-cake-text {
+    opacity: 1;
+    text-align: center;
+    color: white;
+    display: block; 
+    font-family: sans-serif;
+}
+
+.card-body:hover .card-cake-text {
+    opacity: 0;
+    display: none;
+}
+
+.card-cake-text p {
+    margin-bottom: 20px;
+}
+
+.line {
+    background: #ffffff;
+    height: 5px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.button-card {
+    display: block !important;
+    margin: 15.5px auto;
+    font-family: sans-serif;
+}
+
+.card {
+    transition: transform .8s ease-in-out;
+    font-family: Lobster;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition:  0.4s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+}
+
+/*footer*/
+footer {
+    background-color: #5fcac7;
+    color: white;
+}
+
+
+
+.scrolTo{
+    text-align: right;
+    margin-right: 10px;
+}
+
+.corBotao {
+    background-color: #f88c91 !important;
+    border-color: #f88c91!important; 
+    
+}
+
+.corBotao:hover {
+    background-color: #f06f76 !important;
+}
+
+
+.borderCarousel {
+    width: 100%;
+    float: left;
+    height: 15px;
+    background-image:url(../imagens/nuvemCarousel.png);
+    background-repeat: repeat;
+    background-position: 0px 0px;
+    position: absolute;
+    margin-top: 0px;
+    z-index: 25;
+    background-size: 44px;
+}
+
+.borderBottonCarousel {
+    background-image: url(../imagens/nuvemBottomCarousel.png);
+    margin-top: -14px;
+    width: 100%;
+    height: 15px;
+    background-repeat: repeat-x;
+    position: absolute;
+    z-index: 25;
+    background-size: 44px;
+}
+
+
+.carouBorder {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*  .borderBotomCarousel {
+    width: 100%;
+    height: 15px;
+    background-image: url('http://www.nicdarkthemes.com/themes/sweet-cake/html/demo/img/patterns/bottomwaves.png');
+    background-repeat: repeat-x;
+    position: absolute;
+    z-index: 25;
+    background-size: 44px;
+    margin-top: -10px;
+}  */
+
+
+#cadastrOk {
+    display: none;
+}
+
+
+.money {
+    font-size: 50px;
+}
+
+
+/*Estilo Cadastro*/
+
+
+label {
+    font-family: Lobster, sans-serif;
+    color: #000000;
+    font-size: 20px;
+    text-shadow: 2px 2px 0 rgb(223 223 223 / 90%);
+}
+
