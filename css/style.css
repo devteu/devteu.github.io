@@ -145,7 +145,7 @@ span {
     cursor: pointer;
     transform: scale(1.03);
     transition:  0.4s;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+    box-shadow: 0px 0px 8px #f57f7f; 
 }
 
 /*footer*/
@@ -252,7 +252,8 @@ label {
     background-image: url('../imagens/background-cake.png');
     border-radius: 5px;
     color: white;
-    padding: 20px;
+    padding: 22px;
+    box-shadow: -1px 3px  #f57f7f; 
    
 
 }
