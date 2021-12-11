@@ -49,16 +49,29 @@
     <section>
         <div class="container">
             <h1 class="bgBolos p-5 text-center">Pedidos</h1>
-            <form class="p-5">
-                <label for="" class="form-label">Qual será o sabor?</label>
-                <input type="text" class="form-control" required>
+            <form class="mt-4">
+                <select name="opbolos" id="opbolos" class="mb-3 d-flex m-auto">
+                    <option value="0" hidden>Escolher sabor</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="limao">Limão</option>
+                    <option value="morango">Morango</option>
+                    <option value="ninho">Ninho</option>
+                </select> <br>
                 <label for="" class="form-label">Quantidade</label>
-                <input type="number" class="form-control" required>
+                <input id="qtde" type="number" class="form-control" required>
+                <label for="" class="form-label">Data Entrega</label>
+                <input type="date" class="form-control" required>
+                <label for="" class="form-label">Descrição</label>
+                <input type="text" class="form-control" required>
+                <label for="" class="form-label">Total</label>
+                <input id="total" type="text" class="form-control" required readonly>
                 <button class="btn btn-danger corBotao mt-3" type="submit" id="button-addon2">Enviar Pedido »</button>
             </form>
         </div>
     </section>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

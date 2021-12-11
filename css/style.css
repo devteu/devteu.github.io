@@ -258,3 +258,17 @@ label {
 .cakesMain {
     max-width: 370px;
 }
+
+
+
+#opbolos {
+    padding: 5px;
+    border: 1px solid #f57f7f;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    width: 150px;
+    color: rgba(0,0,0,.7);
+}
